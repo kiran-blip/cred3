@@ -23,15 +23,14 @@ export default function Home() {
 
       <div className={styles.main}>
         <h1 className={styles.title}>
-          Your First Solana Program with{" "}
-          <a href="https://alchemy.com/solana/?a=d0c917f7ef">Alchemy</a>!
+          Search people using verified credentials
         </h1>
 
         {wallet && (
           <div className={styles.message_bar}>
             <input
               className={styles.message_input}
-              placeholder="Write Your Message!"
+              placeholder="Badge Name"
               onChange={(e) => setInputtedMessage(e.target.value)}
               value={inputtedMessage}
             />
@@ -55,7 +54,7 @@ export default function Home() {
                 }
               }}
             >
-              {message ? "Update the Message!" : "Create a Message!"}
+              {message ? "Update Search!" : "Search"}
             </button>
           </div>
         )}
