@@ -8,6 +8,7 @@ import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 import { endpoint } from "./api/utils/constants";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import "../styles/globals.css";
+import { CivicProfile, Profile } from "@civic/profile";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const phantomWallet = new PhantomWalletAdapter();

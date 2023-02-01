@@ -13,7 +13,6 @@ export default function Home() {
   const [messageAuthor, setMessageAuthor] = useState("");
   const [messageTime, setMessageTime] = useState(0);
   const [inputtedMessage, setInputtedMessage] = useState("");
-
   const wallet = useAnchorWallet();
   const mounted = useIsMounted();
 

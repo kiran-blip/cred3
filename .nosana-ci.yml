@@ -1,0 +1,23 @@
+# .nosana-ci.yml
+nosana:
+    description: Build Nosana Documentation
+
+global:
+    image: registry.hub.docker.com/library/node:18
+
+    # Git, trigger on these branches
+    trigger:
+        branch:
+            - master
+
+    # Environment variables
+    environment:
+        APP_ENV: production  # comment here about this var
+jobs: 
+
+    # Install dependencies
+    - name: install
+      commands:
+          - yarn install 
+          - yarn run lint 
+
