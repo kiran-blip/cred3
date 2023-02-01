@@ -22,7 +22,7 @@ jobs:
     # Install dependencies
     - name: install
       commands:
-          - yarn ci 
+          - yarn install 
           - yarn run lint 
       artifacts:  # artifact for the next job
           - name: node_modules
